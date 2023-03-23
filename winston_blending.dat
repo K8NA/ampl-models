@@ -1,0 +1,20 @@
+
+data;
+
+set GAS := G1 G2 G3;
+set CRUDE := C1 C2 C3;
+
+param advertising_demand := 10; # galons gas/$
+param unit_prod_cost := 4;      # $/galons produced
+param prod_capacity := 14000;   # number galons produced
+
+param:   sales_price  gas_octane gas_sulfur   demand  :=
+    G1        70          10         1.0       3000
+    G2        60           8         2.0       2000
+    G3        50           6         1.0       1000;
+
+param:  purchase_quant  purchase_price  crude_sulfur    crude_octane := 
+    C1      5000              45              0.5            12
+    C2      5000              35              2.0             6
+    C3      5000              25              3.0             8;
+

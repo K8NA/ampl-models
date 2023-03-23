@@ -1,0 +1,7 @@
+set PROD := fitas bobinas;      # produtos a fabricar
+
+param:    rate  profit  market :=       # parametros do modelo:
+  fitas    200    25     6000           # taxa de producao, lucro
+  bobinas  140    30     4000 ;         # e procura
+
+param avail := 40;      # horas de trabalho semanais disponiveis

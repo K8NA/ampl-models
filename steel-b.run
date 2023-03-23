@@ -1,0 +1,4 @@
+      model steel-b.mod
+      data steel-b.dat
+      solve;
+      display Make;

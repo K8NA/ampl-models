@@ -1,0 +1,3 @@
+model steel-a.mod
+solve;
+display XF, XB;

@@ -1,0 +1,4 @@
+model ./code/teste.mod
+data ./code/teste.dat
+solve;
+display profit;
