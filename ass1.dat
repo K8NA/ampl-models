@@ -1,0 +1,27 @@
+
+data;
+
+set GAS := G1 G2 G3;
+set CRUDE := C1 C2 C3;
+
+param NAPHTHA_OCTANE := 10;
+param OIL_OCTANE := 6;
+param DIST_LIMIT := 14000;
+param DIST_COST := 3;
+param BLEND_COST := 1;
+param AD_EFFECT := 10; # galons gas/$
+
+param: OCTANE_RATING  DEMAND  PRICE :=
+    G1      10         3000    70
+    G2       9         2000    60
+    G3       8         1000    50;
+
+param:   NAPHTHA    OIL   COST  BUY_LIMIT :=
+    C1     0.50    0.42   45    5000
+    C2     0.60    0.38   35    5000
+    C3     0.55    0.41   25    5000;
+
+#ex2
+param CRACK_LIMIT := 3500;
+param CRACK_COST := 4;
+param CRACKED_OCTANE := 15;

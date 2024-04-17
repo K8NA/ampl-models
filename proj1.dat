@@ -1,0 +1,42 @@
+data;
+
+set CRUDE := C1 C2 C3;
+set INTERM := NAPHTHA OIL CGAS;
+set GAS := G1 G2 G3 G4;
+
+param d :
+           NAPHTHA    OIL   CGAS    := #   WASTE  :=
+    C1      0.50     0.42     0        #    0.08
+    C2      0.60     0.38     0        #    0.02
+    C3      0.55     0.41     0        #    0.04
+;
+
+param c :
+            NAPHTHA  OIL  CGAS      := #   WASTE :=
+    NAPHTHA    0      0     0          #
+    OIL        0      0     0.95       #   0.05
+    CGAS       0      0     0          #
+;
+
+param:     interm_octane :=
+    CGAS        15
+    NAPHTHA     10
+    OIL          6        ;
+
+param:   sales_price  gas_octane   demand  :=
+    G1        70          10        3000
+    G2        60           8        2000
+    G3        50           6        1000
+    G4        75          11        1000;
+
+param:  purchase_quant  purchase_price   :=
+    C1      5000              45
+    C2      5000              35
+    C3      5000              25         ;
+
+param advertising_demand := 10; # barrels gas/$
+param unit_dist_cost := 3;      # $/barrels produced
+param unit_crack_cost := 4;     # $/barrels produced
+param unit_blend_cost := 1;     # $/barrels produced
+param destil_capacity := 14000; # number barrels produced
+param crack_capacity := 3500;   # number barrels produced

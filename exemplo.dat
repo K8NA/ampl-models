@@ -1,0 +1,16 @@
+set STUDENTS := 1 2 3 4 5 6 7 8 9 10;
+set EXAMS := 1 2 3 4 5 6 7;
+
+set STUDENT_EXAMS[1] :=  1 2 3 4 5;
+set STUDENT_EXAMS[2] :=  1 4 5;
+set STUDENT_EXAMS[3] :=  1 4 5 6;
+set STUDENT_EXAMS[4] :=  1 4 3 5 7;
+set STUDENT_EXAMS[5] :=  2 4 6 7;
+set STUDENT_EXAMS[6] :=  3;
+set STUDENT_EXAMS[7] :=  2 4 5 7;
+set STUDENT_EXAMS[8] :=  1 2 4 5 6 7;
+set STUDENT_EXAMS[9] :=  2 3 4 5;
+set STUDENT_EXAMS[10] := 6 7;
+;
+
+param avaiable_periods := 25;

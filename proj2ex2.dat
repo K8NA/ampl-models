@@ -1,0 +1,36 @@
+data;
+set C := c py web ;
+
+param: P: disp custo :=
+       p1    4     5
+       p2   10     5
+       p3    7     5 ;
+
+param: T: tempo preco :=
+       t1     7   250
+       t2     3   150
+       t3     9   200
+       t4     9   100
+       t5     7   250 ;
+
+param comp_p (tr) :
+            p1  p2  p3 :=
+      c      1   0   1
+      py     1   1   0
+      web    1   1   1 ;
+
+param avaliacao (tr) :
+            p1  p2  p3 :=
+      c      5   0   5
+      py     5   3   0
+      web    1   5   1 ;
+
+param comp_t :
+            c   py  web :=
+      t1    5    0    2
+      t2    0    3    0
+      t3    0    6    3
+      t4    3    3    3
+      t5    2    3    2 ;
+
+param lucro_min := 505;
